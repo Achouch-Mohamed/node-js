@@ -21,7 +21,9 @@ mongoose
 
 // ======= ARTICLES ENDPOINTS =====
 
-
+app.get('/',(req,res)=> {
+  res.send('hello in project node js ')
+})
 // Add Articles
 app.post("/articles", async (req, res) => {
   const newArticle = new Article();
